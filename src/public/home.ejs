@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            background-color: rosybrown;
-        }
-    </style>
+    <link rel="stylesheet" href="../styles.css">
 </head>
+
 <body>
-    hola desde la pagina home de ejs
+
+    <% if(productos.length === 0) { %>
+        <p>no hay productos</p>
+    <% } else { %>
+        <% for(let i=0; i < productos.length; i++) { %>
+        <p>
+            <%= productos[i].name %>
+            <%= productos[i].precio %>
+            <%= productos[i].cantidad %>
+        </p>
+        <% } %>
+    <% } %>
+    
+
+
+            <%- include("menu") %>
+                <main id="home">
+                    hola desde la pagina de home de ejs
+                </main>
 </body>
+
 </html>

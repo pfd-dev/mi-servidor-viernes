@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    padding: 10em;
+}
+
+main {
+    padding: 2em;
+}
+
+#home {
+    background-color: royalblue;
+}
+
+#dashboard {
+    background-color: rosybrown;
+}
